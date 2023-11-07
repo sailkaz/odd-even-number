@@ -22,7 +22,7 @@ namespace odd_even_number
 
                 while (value == "y")
                 {
-                    Console.WriteLine("Czy chcesz kontynuować Y/N");
+                    Console.WriteLine("Czy chcesz kontynuować? Y/N");
                     value = Console.ReadLine();
                     if (value.ToLower() == "n")
                         Environment.Exit(0);
