@@ -30,7 +30,7 @@ namespace odd_even_number
                         break;
                     else
                     {
-                        Console.WriteLine($"Wprowadiłeś niewłaściwą wartość {value}\nWprowadź Y aby kontynuować lub N by zakończyć");
+                        Console.WriteLine($"Wprowadziłeś niewłaściwą wartość {value}\nWprowadź Y aby kontynuować lub N by zakończyć");
                         value = "y";
                     }
                 }
