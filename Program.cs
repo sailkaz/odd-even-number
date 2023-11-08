@@ -24,9 +24,9 @@ namespace odd_even_number
                 {
                     Console.WriteLine("Czy chcesz kontynuować? Y/N");
                     value = Console.ReadLine();
-                    if (value.ToLower() == "n")
+                    if (value?.ToLower() == "n")
                         Environment.Exit(0);
-                    else if (value.ToLower() == "y")
+                    else if (value?.ToLower() == "y")
                         break;
                     else
                     {
@@ -36,21 +36,21 @@ namespace odd_even_number
                 }
             }
 
-            static int GetNumber()
-            {
-                while (true)
-                {
-                    if (!int.TryParse(Console.ReadLine(), out int userNumber))
-                    {
-                        Console.WriteLine("Wprowadzona wartość nie jest liczbą całkowitą\nSpróbuj jeszcze raz.");
-                        continue;
-                    }
-                    return userNumber;
-                }
-
-            }
-
 
         }
+        private static int GetNumber()
+        {
+            while (true)
+            {
+                if (!int.TryParse(Console.ReadLine(), out int userNumber))
+                {
+                    Console.WriteLine("Wprowadzona wartość nie jest liczbą całkowitą\nSpróbuj jeszcze raz.");
+                    continue;
+                }
+                return userNumber;
+            }
+
+        }
+
     }
 }
